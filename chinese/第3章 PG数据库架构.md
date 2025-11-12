@@ -102,7 +102,7 @@ PostgreSQL 的稳定性和并发能力很大程度上得益于其多进程架构
     - 在系统崩溃后进行恢复。
 - **代码入口**：src/backend/postmaster/postmaster.c 中的 PostmasterMain 和 ServerLoop 函数。
 
-### 3.3.2 后端进程 (Postgres)
+### 3.3.2 后端进程 (Backend)
 
 - **角色**：直接与客户端通信，执行其提交的查询。
 - **生命周期**：随客户端连接创建，随连接断开而终止。
